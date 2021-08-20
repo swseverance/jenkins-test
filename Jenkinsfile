@@ -9,7 +9,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'npm test'
+        sh 'npm test --watch=false'
       }
     }
     stage('Build') {
